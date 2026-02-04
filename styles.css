@@ -1,0 +1,79 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+#game-container {
+    margin: 20px auto;
+    width: 90%;
+    max-width: 600px;
+}
+
+h1 {
+    color: #333;
+}
+
+#score-panel {
+    margin-bottom: 15px;
+}
+
+#score-panel span {
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+/* style.css */
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Ensures 4 cards per row */
+    gap: 10px;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1; /* Ensures square cards */
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transform: rotateY(0deg); /* Default position */
+    transition: transform 0.5s; /* Smooth flip animation */
+}
+
+.card.flipped {
+    transform: rotateY(180deg); /* Flips the card */
+}
+
+.card .front,
+.card .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Hides the back side by default */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 2rem;
+}
+
+.card .front {
+    background-color: #e0e0e0; /* Front side color */
+    color: transparent; /* Hide content initially */
+}
+
+.card .back {
+    background-color: #3498db; /* Back side color */
+    color: white; /* Visible content */
+    transform: rotateY(180deg); /* Back side is hidden initially */
+}
+
