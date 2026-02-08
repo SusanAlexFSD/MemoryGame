@@ -65,7 +65,7 @@ No build steps, no dependencies — it runs instantly.
     If not → they flip back over
 
 
-    🚀 Future Improvements
+   🚀 Future Improvements
 
     Move counter
 
@@ -75,9 +75,9 @@ No build steps, no dependencies — it runs instantly.
 
     Sound effects
 
-    High‑score tracking
+    High‑score tracking 
 
-    
+
 
 ## 📸 Screenshots
 
