@@ -64,6 +64,19 @@ No build steps, no dependencies — it runs instantly.
 
     If not → they flip back over
 
+
+    🚀 Future Improvements
+
+    Move counter
+
+    Timer
+
+    Difficulty levels
+
+    Sound effects
+
+    High‑score tracking
+
 ## 📸 Screenshots
 
 ### Homepage
