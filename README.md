@@ -64,8 +64,9 @@ No build steps, no dependencies — it runs instantly.
 
     If not → they flip back over
 
+# Future Imporvements
 
-   🚀 Future Improvements
+🚀 Future Improvements
 
     Move counter
 
