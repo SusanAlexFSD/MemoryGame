@@ -77,6 +77,8 @@ No build steps, no dependencies — it runs instantly.
 
     High‑score tracking
 
+    
+
 ## 📸 Screenshots
 
 ### Homepage
