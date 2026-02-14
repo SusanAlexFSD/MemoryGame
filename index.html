@@ -1,21 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Memory Match Game</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Memory Match Game</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-    <div id="game-container">
-        <h1>Memory Match Game</h1>
-        <div id="score-panel">
-            <span id="moves">Moves: 0</span>
-            <span id="timer">Time: 0s</span>
-            <button id="restart">Restart</button>
-        </div>
-        <div id="game-board"></div>
+  <img src="images/bg-rainbow.png" id="bg-test" alt="" />
+
+  <main id="game-container">
+    <h1>Memory Match Game</h1>
+
+    <div id="score-panel">
+      <span id="moves">Moves: 0</span>
+      <span id="timer">Time: 0s</span>
+      <button id="restart" type="button">Restart</button>
     </div>
-    <script src="script.js"></script>
+
+    <div id="game-board"></div>
+  </main>
+
+  <!-- WIN MODAL -->
+  <div id="win-modal" role="dialog" aria-modal="true" aria-labelledby="win-title">
+    <div class="modal-box">
+      <h2 id="win-title">🎉 You Win!</h2>
+      <p id="final-stats"></p>
+      <button id="play-again" type="button">Play Again</button>
+    </div>
+  </div>
+
+  <!-- LOSE MODAL -->
+  <div id="lose-modal" role="dialog" aria-modal="true" aria-labelledby="lose-title">
+    <div class="modal-box">
+      <h2 id="lose-title">⏰ Time’s Up!</h2>
+      <p id="lose-stats"></p>
+      <button id="try-again" type="button">Try Again</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
